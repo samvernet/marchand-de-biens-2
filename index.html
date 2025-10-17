@@ -12,7 +12,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 <!-- Styles -->
-<link href="styles_updated.css" rel="stylesheet"/>
+<link href="styles-standalone.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="hero-section" style="padding: 4rem 2rem; text-align: center; background: var(--gradient-accent);">
@@ -34,6 +34,9 @@
 <p class="subtitle">Outil professionnel pour marchands de biens</p>
 </div>
 </div>
+<button class="btn btn-secondary" id="toggleDarkMode" style="margin-right: 1rem;">
+    <i data-lucide="moon"></i>
+</button>
 <button class="btn btn-primary" id="exportPdf">
 <i data-lucide="download"></i>
                     Exporter PDF
@@ -287,7 +290,7 @@
 </div>
 </main>
 <!-- JavaScript -->
-<script src="script_updated.js"></script>
+<script src="script-standalone.js"></script>
 <script>
         // Initialize Lucide icons
         lucide.createIcons();
